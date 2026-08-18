@@ -24,7 +24,7 @@ ggplot(data = clean_health_data, aes(x = Height, y = Pulse)) +
   labs(title = "Somatic Scale vs. Cardiovascular Workload",
        subtitle = "Real-World Analysis of NHANES Clinical Cohort",
        x = "Patient Height (cm)",
-       y = "Resting Pulse (Beats Per Minute)") +
+       y = "Resting Pulse (BPM)") +
   theme_classic()
 
 summary(lm(Pulse ~ Height, data = clean_health_data))
