@@ -30,8 +30,10 @@ ggplot(data = clean_health_data, aes(x = Height, y = Pulse)) +
 summary(lm(Pulse ~ Height, data = clean_health_data))
 ```
 
+![Somatic Scale Plot](somatic_scale_plot.png)
+
 ## Results
-The linear regression analysis of the 8,510 cleaned clinical observations revealed a statistically significant negative correlation between physical height and resting heart rate (p < 2.2e-16). The mathematical model calculated an intercept coefficient of 104.76 BPM and a Height slope coefficient of -0.187. This indicates that for every 1-centimeter increase in patient height, the resting pulse decreases by approximately 0.19 beats per minute. The dense data clustering combined with a highly significant t-value (-17.25) confirms that somatic scaling plays a consistent role in shaping baseline human vitals.
+The linear regression analysis of the 8,510 cleaned clinical observations revealed a statistically significant negative correlation between physical height and resting heart rate (p < 2.2e-16). The mathematical model calculated an intercept coefficient of 104.76 BPM and a Height slope coefficient of -0.187. This indicates that for every 1-centimeter increase in patient height, the resting pulse decreases by approximately 0.19 beats per minute. The dense data clustering combined with a highly significant t-value (-17.25) confirms that somatic scaling plays a consistent role in shaping baseline human vitals. 
 
 ## Conclusion
 This secondary analysis successfully confirms the hypothesis that human stature exhibits a negative allometric scaling relationship with resting heart rate. As an individual grows taller, the physical volume of the cardiac chambers increases, yielding a higher stroke volume per contraction. To maintain standard systemic blood perfusion, a heart with greater stroke volume requires fewer beats per minute, directly lowering the overall resting pulse. This independent study demonstrates the critical intersection of physics, macro-structural anatomy, and clinical diagnostics.
